@@ -8,7 +8,7 @@ const addNotes = (title,body)=> {
     const notes = loadNotes()
     //Ensure that the note is not duplicated
     const duplicates = notes.find((note)=> note.title === title)
-
+    debugger
     if(!duplicates){
         notes.push({
             title: title,
@@ -19,6 +19,7 @@ const addNotes = (title,body)=> {
     }else {
         console.log('note not as its duplicated')
     }
+
 }
 
 //removing a note 
